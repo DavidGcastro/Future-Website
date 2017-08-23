@@ -1,4 +1,4 @@
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 720px) {
     
    #logo{
    	display: none;
@@ -10,25 +10,26 @@
   width: 100%;
   height: 100%;
   position:fixed;
-    z-index: 3; 
+   z-index: 3;
+     
 
 }
 
-   
-
     div.nav-menu ul{
-      padding-left: 0;
-      display: none;
 
+    padding: 0;
+    margin: 0;
+    display: none;
     }
 
 
 
     div.nav-menu ul li{
     width: 100%;
-    margin-left: 0;
+    padding:0;
+    margin: 0;
      font-size: 1.5rem;
-     margin-left: 0;
+     margin-right: 0px;
     background: black;
 
  
@@ -42,11 +43,10 @@
     
 
 
-
     a{
       padding:40px;
       color: white;
-     background: black;
+     -background: black;
      float: right;
 
     }
@@ -57,7 +57,7 @@
 
 
      
-   .menu-trigger{
+ .menu-trigger{
 
   display: inline;
   color:red;

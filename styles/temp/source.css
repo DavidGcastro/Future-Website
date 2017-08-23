@@ -28,9 +28,9 @@ hr {
 }
 
 
-.title h1 {
+.title {
 	font-size: 38px;
-	letter-spacing: 4px;
+ letter-spacing: 4px;
 }
 
 
@@ -167,7 +167,8 @@ hr {
 div.nav-menu ul{
 	list-style: none;
 	float:right;  
-	margin-top: 2px;
+	margin-top: 8px;
+    margin-right: 40px;
 	
   
 }
@@ -176,9 +177,8 @@ div.nav-menu ul{
 div.nav-menu ul li{
 	
 	display: inline-block;
-	margin-right: 20px;
-	margin-left: 40px;
-	font-size: 1.25rem;
+     padding-left: 100px;
+	
 	overflow-wrap: none;
   
 
@@ -195,7 +195,7 @@ div.nav-menu ul li{
 
 
     margin-left: 20px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-top: 10px;
     position: absolute;
     top: 0;
@@ -235,7 +235,7 @@ a {
 }
 
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 720px) {
     
    #logo{
    	display: none;
@@ -247,25 +247,26 @@ a {
   width: 100%;
   height: 100%;
   position:fixed;
-    z-index: 3; 
+   z-index: 3;
+     
 
 }
 
-   
-
     div.nav-menu ul{
-      padding-left: 0;
-      display: none;
 
+    padding: 0;
+    margin: 0;
+    display: none;
     }
 
 
 
     div.nav-menu ul li{
     width: 100%;
-    margin-left: 0;
+    padding:0;
+    margin: 0;
      font-size: 1.5rem;
-     margin-left: 0;
+     margin-right: 0px;
     background: black;
 
  
@@ -279,11 +280,10 @@ a {
     
 
 
-
     a{
       padding:40px;
       color: white;
-     background: black;
+     -background: black;
      float: right;
 
     }
@@ -294,7 +294,7 @@ a {
 
 
      
-   .menu-trigger{
+ .menu-trigger{
 
   display: inline;
   color:red;

@@ -2,7 +2,8 @@
 div.nav-menu ul{
 	list-style: none;
 	float:right;  
-	margin-top: 2px;
+	margin-top: 8px;
+    margin-right: 40px;
 	
   
 }
@@ -12,9 +13,8 @@ div.nav-menu ul{
 div.nav-menu ul li{
 	
 	display: inline-block;
-	margin-right: 20px;
-	margin-left: 40px;
-	font-size: 1.25rem;
+     padding-left: 100px;
+	
 	overflow-wrap: none;
   
 
@@ -31,7 +31,7 @@ div.nav-menu ul li{
 
 
     margin-left: 20px;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-top: 10px;
     position: absolute;
     top: 0;
