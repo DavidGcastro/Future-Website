@@ -50,7 +50,7 @@ hr {
 	top: 50px;
 	height: 100%;
 	position: fixed;
-	width: 50%;
+	width: 100%;
 }
 
 
@@ -59,15 +59,17 @@ hr {
 	margin-left: 145px;
 	margin-right: 180px;
 	margin-bottom: 145px;
-	margin-top: 100px;
+	
 }
 
 
 @media only screen and (max-width: 960px) {
     .left--content{
-    	width: 100%;
     	margin-left: 10px;
+        margin-top: 60px;
     }
+
+
 
 .title {
 	font-size: 38px;
@@ -88,28 +90,29 @@ hr {
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
 	.parent {
-		position: absolute;
-		width: 100%;
-		/*position: fixed;*/
+        height: 100%;
+
 	}
 	#image {
 		width: 100%;
-		height: 550px;
+		height: 450px;
 		z-index: 0;
 		position: absolute;
 	}
 	.left {
-		position: relative;
-		margin-top: 510px;
+		position: absolute;
+		margin-top: 450px;
 		margin-left: 0;
+		top:-20px;
+        width: 100%;
+        height: 5%;
+        
 	}
 	.left--content {
-		margin-left: 50%;
-		margin-right: 50%;
-		width: 100%;
-		height: 100%;
+        width: 80%;
+        margin: 0 auto;
 		text-align: center;
 	}
 	
@@ -127,13 +130,13 @@ hr {
 	}
    
 	#image  {
-		height: 40%;
+		height: 35%;
 		width: 100%;
 	}
 
 	.left {
-		margin-top: 320px;
-		margin-left: 0px;
+		margin-top: 280px;
+		/*margin-left: 0px;*/
 		width: 100%;
 	}
 	.left--content {
@@ -154,11 +157,11 @@ hr {
 		padding: 0px;
 	}
 	p {
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
   .title{
-  	font-size: 1.5rem;
+  	font-size: 1.125rem;
   }
 
 }
@@ -167,7 +170,7 @@ hr {
 div.nav-menu ul{
 	list-style: none;
 	float:right;  
-	margin-top: 8px;
+	margin-top: 20px;
     margin-right: 40px;
 	
   
@@ -178,7 +181,7 @@ div.nav-menu ul li{
 	
 	display: inline-block;
      padding-left: 100px;
-	
+	 font-size: 1.2rem;
 	overflow-wrap: none;
   
 
@@ -195,8 +198,8 @@ div.nav-menu ul li{
 
 
     margin-left: 20px;
-    font-size: 1rem;
-    margin-top: 10px;
+    font-size: 1.5rem;
+    margin-top: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -221,7 +224,15 @@ a {
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 960px) {
+    div.nav-menu ul li{
+        padding-left: 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
 
   
 	div.nav-menu ul li{
@@ -232,81 +243,56 @@ a {
 		
 		
 	}
+    nav{
+        height: 0px;
+    }
 }
 
 
-@media only screen and (max-width: 720px) {
-    
-   #logo{
-   	display: none;
-
-   }
-
-
- #parent-nav{
-  width: 100%;
-  height: 100%;
-  position:fixed;
-   z-index: 3;
-     
-
-}
-
-    div.nav-menu ul{
-
-    padding: 0;
-    margin: 0;
-    display: none;
-    }
-
-
-
-    div.nav-menu ul li{
-    width: 100%;
-    padding:0;
-    margin: 0;
-     font-size: 1.5rem;
-     margin-right: 0px;
-    background: black;
-
- 
-     
-     }
-
-
-   div.nav-menu ul li:nth-of-type(4){
-     padding-bottom: 100%;
-   }
-    
-
-
-    a{
-      padding:40px;
-      color: white;
-     -background: black;
-     float: right;
-
-    }
-    a:hover{
-      color:red;
-    }
-
-
-
-     
- .menu-trigger{
-
-  display: inline;
-  color:red;
-  float:right;
-  margin:10px;
-  position: absolute;
-  right:40;
-  top:0;
-  
-   font-size: 1rem;
- }
-
-   
-    
+@media only screen and (max-width: 768px) {
+	#logo {
+		display: none;
+	}
+	#parent-nav {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		z-index: 3;
+	}
+	div.nav-menu ul {
+		padding: 0;
+		margin: 0;
+		display: none;
+		float: none;
+	}
+	div.nav-menu ul li {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-size: 1.5rem;
+		margin-right: 0px;
+		background: black;
+	}
+	div.nav-menu ul li:nth-of-type(4) {
+		padding-bottom: 100%;
+	}
+	a {
+		padding: 40px;
+		color: white;
+		-background: black;
+		float: right;
+	}
+	a:hover {
+		color: red;
+	}
+	.menu-trigger {
+		display: inline;
+		color: red;
+	/*	float: right;*/
+		margin: 10px;
+		position: absolute;
+		right: 40;
+		top: 0;
+		font-size: 1rem;
+	}
 }
